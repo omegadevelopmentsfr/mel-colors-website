@@ -1,5 +1,3 @@
-import type { OpenNextConfig } from "@opennextjs/aws/types/open-next.js";
-
 const config = {
   default: {
     override: {
@@ -18,6 +16,6 @@ const config = {
       proxyExternalRequest: "fetch",
     },
   },
-} satisfies OpenNextConfig;
+};
 
 export default config;
