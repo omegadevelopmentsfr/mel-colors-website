@@ -9,8 +9,24 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        brand: {
+          orange: "#E07A3F",
+          mustard: "#C8922A",
+          magenta: "#E0317F",
+          cyan: "#00BCD4",
+          olive: "#8B9E2A",
+          coral: "#E05A3A",
+          purple: "#7B5EA7",
+          cream: "#F2EDE8",
+          black: "#111111",
+        },
+      },
+      fontFamily: {
+        heading: ["var(--font-syne)", "serif"],
+        body: ["var(--font-dm-sans)", "sans-serif"],
+      },
+      borderRadius: {
+        pill: "999px",
       },
     },
   },
