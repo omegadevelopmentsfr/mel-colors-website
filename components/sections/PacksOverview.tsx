@@ -5,21 +5,18 @@ import { useGSAP } from "@gsap/react";
 import { gsap } from "@/lib/gsapInit";
 import { useMouseTilt } from "@/hooks/useMouseTilt";
 import SplitText from "@/components/ui/SplitText";
-import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
 import { Palette, Rocket, Sparkles } from "lucide-react";
 
 function PackCard({
   icon: Icon,
   label,
-  color,
   name,
 }: {
   icon: React.ElementType;
   label: string;
-  color: string;
   name: string;
 }) {
-  const { ref, tiltStyle, shimmerStyle, handleMouseMove, handleMouseLeave } =
+  const { ref, tiltStyle, handleMouseMove, handleMouseLeave } =
     useMouseTilt(12);
 
   return (
@@ -130,7 +127,6 @@ export default function PacksOverview() {
         <PackCard
           icon={Palette}
           label="Starter"
-          color="var(--orange)"
           name="Pack Starter Color"
         />
 
@@ -153,7 +149,6 @@ export default function PacksOverview() {
         <PackCard
           icon={Rocket}
           label="Boost"
-          color="var(--magenta)"
           name="Pack Color Boost"
         />
 
@@ -176,7 +171,6 @@ export default function PacksOverview() {
         <PackCard
           icon={Sparkles}
           label="Full"
-          color="var(--purple)"
           name="Pack Full Color"
         />
       </div>
