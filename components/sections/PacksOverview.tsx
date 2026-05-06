@@ -5,14 +5,14 @@ import { useGSAP } from "@gsap/react";
 import { gsap } from "@/lib/gsapInit";
 import { useMouseTilt } from "@/hooks/useMouseTilt";
 import SplitText from "@/components/ui/SplitText";
-import { Palette, Rocket, Sparkles } from "lucide-react";
+import { LucideIcon, Palette, Rocket, Sparkles } from "lucide-react";
 
 function PackCard({
   icon: Icon,
   label,
   name,
 }: {
-  icon: React.ElementType;
+  icon: LucideIcon;
   label: string;
   name: string;
 }) {
